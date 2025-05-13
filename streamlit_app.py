@@ -11,13 +11,20 @@ username = st.secrets["SNOWFLAKE_USERNAME"]
 host = st.secrets["SNOWFLAKE_HOST"]
 password = st.secrets["SNOWFLAKE_PASSWORD"]
 # Snowflake接続
-cnx = st.snowflake.connect(
-    user=username,
+##cnx = st.snowflake.connect(
+##    user=username,
+##    password=password,
+##    account=account,
+##    host=host,
+##)
+# Snowflake接続
+cnx = st.connection(
+    "snowflake",
+    username=username,
     password=password,
     account=account,
     host=host,
 )
-
 
 
 
