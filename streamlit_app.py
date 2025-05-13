@@ -6,10 +6,11 @@ import streamlit as st
 ##st.secrets["SNOWFLAKE_USERNAME"] = "MASAKIMACHIOKA"
 ##st.secrets["SNOWFLAKE_HOST"] = "INZRLSU-ZRB74007.snowflakecomputing.com"
 ##st.secrets["SNOWFLAKE_PASSWORD"] = ""
-account = st.secrets["account"]
-username = st.secrets["user"]
-host = st.secrets["SNOWFLAKE_HOST"]
-password = st.secrets["password"]
+
+##account = st.secrets["account"]
+##username = st.secrets["user"]
+##host = st.secrets["SNOWFLAKE_HOST"]
+##password = st.secrets["password"]
 # Snowflake接続
 ##cnx = st.snowflake.connect(
 ##    user=username,
@@ -18,13 +19,13 @@ password = st.secrets["password"]
 ##    host=host,
 ##)
 # Snowflake接続
-cnx = st.connection(
-    "snowflake",
-    username=username,
-    password=password,
-    account=account,
-    host=host,
-)
+##cnx = st.connection(
+##    "snowflake",
+##    username=username,
+##    password=password,
+##    account=account,
+##    host=host,
+##)
 
 
 
