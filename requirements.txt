@@ -11,3 +11,4 @@
 ## changes required to shift from Sis to Snis
 snowflake-snowpark-python
 streamlit
+requests
