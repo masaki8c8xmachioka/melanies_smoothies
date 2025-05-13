@@ -1,5 +1,13 @@
 # Import python packages
 import streamlit as st
+
+##connection info
+st.secrets["SNOWFLAKE_ACCOUNT"] = "ZRB74007"
+st.secrets["SNOWFLAKE_USERNAME"] = "MASAKIMACHIOKA"
+st.secrets["SNOWFLAKE_HOST"] = "INZRLSU-ZRB74007.snowflakecomputing.com"
+st.secrets["SNOWFLAKE_PASSWORD"] = "Mac@16Nov12345"
+
+
 ##from snowflake.snowpark.context import get_active_session
 
 from snowflake.snowpark.functions import col
