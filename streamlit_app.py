@@ -10,9 +10,20 @@ account = st.secrets["SNOWFLAKE_ACCOUNT"]
 username = st.secrets["SNOWFLAKE_USERNAME"]
 host = st.secrets["SNOWFLAKE_HOST"]
 password = st.secrets["SNOWFLAKE_PASSWORD"]
+# Snowflake接続
+cnx = st.snowflake.connect(
+    user=username,
+    password=password,
+    account=account,
+    host=host,
+)
+
+
+
+
+
 
 ##from snowflake.snowpark.context import get_active_session
-
 from snowflake.snowpark.functions import col
 
 
