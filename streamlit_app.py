@@ -35,7 +35,7 @@ st.write("The name on your Smoothie will be:", name_on_order)
 
 
 
-
+## Changes Needed When Moving from SiS to SniS
 ##session = get_active_session()
 cnx = st.connection("snowflake")
 session = cnx.sesseion()
