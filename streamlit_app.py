@@ -2,11 +2,14 @@
 import streamlit as st
 
 ##connection info
-st.secrets["SNOWFLAKE_ACCOUNT"] = "ZRB74007"
-st.secrets["SNOWFLAKE_USERNAME"] = "MASAKIMACHIOKA"
-st.secrets["SNOWFLAKE_HOST"] = "INZRLSU-ZRB74007.snowflakecomputing.com"
-st.secrets["SNOWFLAKE_PASSWORD"] = "Mac@16Nov12345"
-
+##st.secrets["SNOWFLAKE_ACCOUNT"] = "ZRB74007"
+##st.secrets["SNOWFLAKE_USERNAME"] = "MASAKIMACHIOKA"
+##st.secrets["SNOWFLAKE_HOST"] = "INZRLSU-ZRB74007.snowflakecomputing.com"
+##st.secrets["SNOWFLAKE_PASSWORD"] = ""
+account = st.secrets["SNOWFLAKE_ACCOUNT"]
+username = st.secrets["SNOWFLAKE_USERNAME"]
+host = st.secrets["SNOWFLAKE_HOST"]
+password = st.secrets["SNOWFLAKE_PASSWORD"]
 
 ##from snowflake.snowpark.context import get_active_session
 
