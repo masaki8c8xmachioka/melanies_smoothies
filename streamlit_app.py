@@ -49,7 +49,7 @@ if ingred_list:
 
         st_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
         
-    st.write(ingred_string)
+    #st.write(ingred_string)
 
     my_insert_stmt = """ insert into smoothies.public.orders(ingredients,NAME_ON_ORDER)
             values ('""" + ingred_string + """','""" + name_on_order + """')"""
